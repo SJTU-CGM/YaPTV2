@@ -59,22 +59,22 @@ YaPTV2是作为一个独立的网页而实现的。因此它一般需要搭配<i
 
 #### 控制选取的叶节点
 
-```JavaScript
-HANDLE.setSelection(Array<String> nameArray | Set<String> nameSet)
+```TypeScript
+HANDLE.setSelection(names : (Array<String> | Set<String>))
 HANDLE.getSelection() : Set<String>
 ```
 
 
 #### 控制展示区域
 
-```
-HANDLE.focus(float x, float y)
-HANDLE.focusItem(String itemName)
+```TypeScript
+HANDLE.focus(x : float, y : float)
+HANDLE.focusItem(itemName : string)
 ```
 
 
 #### 控制选区提交
 
 ```
-HANDLE.setSubmitHandle(Procedure handle)
+HANDLE.setSubmitHandle(handle : procedure)
 ```
