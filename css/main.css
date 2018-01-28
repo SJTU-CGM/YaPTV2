@@ -1,0 +1,29 @@
+/* remove useless margin */
+body {
+  margin: 0;
+}
+
+
+/* fullscreen */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* layout panel and tree viewer */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+body > #top, body > #bottom {
+  flex-grow: 0;
+}
+
+body > #tree {
+  flex-grow: 1;
+  overflow: hidden;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}

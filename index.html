@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Yet another Phylogenetic Tree Viewer II</title>
+    <script src="js/library/zepto.min.js"></script>
+    <script src="js/library/whiteout.js"></script>
+    <script src="js/library/webphylotree.js"></script>
+    <script src="js/handle.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body>
+    <div id="top" class="panel">
+      <div id="search" class="toolbar">
+          <input id="goto-target" type="text" placeholder="Enter a item name here">
+          <button onclick="HANDLE.gotoItem(document.getElementById('goto-target').value)" title="Go to the item possition by accession ID.">Go to</button>
+      </div>
+      <div id="node" class="toolbar">
+        <label>Node action:
+          <label>
+            <input type="radio" name="node-behavior" value="fold" onclick="HANDLE.setNodeBehavior('fold')" checked>
+            show/hide
+          </label>
+          <label>
+            <input type="radio" name="node-behavior" value="select" onclick="HANDLE.setNodeBehavior('select')">
+            select
+          </label>
+        </label>
+      </div>
+    </div>
+    <div id="tree"></div>
+    <div id="bottom" class="panel">
+      <div id="selection" class="toolbar">
+        <span><ins><span id="selection-count">0</span></ins> item(s) selected.</span>
+        <button onclick="HANDLE.displaySelection()">View</button>
+        <button onclick="HANDLE.clearSelection()">Clear</button>
+        <button onclick="HANDLE.submit()">Submit</button>
+      </div>
+    </div>
+  </body>
+</html>

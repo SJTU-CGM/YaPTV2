@@ -1,0 +1,5 @@
+{
+    "tree" : "./sample_tree.json",
+    "layout_parameters": "./sample_layout_parameters.json",
+    "layout": "rectangular"
+}

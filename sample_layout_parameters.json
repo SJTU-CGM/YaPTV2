@@ -1,0 +1,60 @@
+{
+	"leaf_height": 15,
+	"branch_length_unit": 2000,
+
+	"leaf_button::auto_flip": false,
+	"leaf_button::width": 100,
+	"leaf_button::font_size": 8,
+	"leaf_button::vertical_padding": 1,
+	"leaf_button::round": 3,
+	"leaf_button::fill": "#ffffff",
+	"leaf_button::stroke": "#000000",
+	"leaf_button::initial_color_scheme": "normal",
+	"leaf_button::color_schemes": {
+		"normal": {
+			"border": "black",
+			"background": "white",
+			"note": "black"
+		},
+		"selected": {
+			"border": "orange",
+			"background": "orange",
+			"note": "black"
+		},
+		"focused": {
+			"border": "red",
+			"background": "white",
+			"note": "red"
+		},
+		"focused&selected": {
+			"border": "red",
+			"background": "orange",
+			"note": "red"
+		}
+	},
+
+	"node_button::radius": 5,
+	"node_button::fill": "#ffffff",
+	"node_button::stroke": "#000000",
+	"node_button::initial_note": "minus",
+	"node_button::initial_color_scheme": "to-hide",
+	"node_button::color_schemes": {
+		"to-hide": {
+			"border": "green", 
+			"background": "white", 
+			"note": "green"
+		},
+		"to-show": {
+			"border": "white", 
+			"background": "red", 
+			"note": "white"
+		},
+		"select": {
+			"border": "orange",
+			"background": "white",
+			"note": "orange"
+		}
+	},
+
+	"zooming::resistance": 10
+}
