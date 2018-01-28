@@ -1,4 +1,5 @@
 let HANDLE = {
+    submitHandle: null,
     getSelection: function() {
         return EDITOR.selection;
     },
@@ -22,7 +23,9 @@ let HANDLE = {
         EDITOR.unselect(item);
     },
     submit: function() {
-        // Note: called internally
+        if (this.submitHandle) {
+            this.submitHandle(this.getSelection());
+        }
     },
     gotoItem: function (name)
     {
@@ -41,5 +44,8 @@ let HANDLE = {
     displaySelection: function () {
         let sel = this.getSelection();
         alert([... sel].join(",\n"));
+    },
+    ready: function () {
+        return ((ROOT && ELEMENT) ? true : false);
     }
 } 
